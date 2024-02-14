@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -H 45.12.236.120 -p 8080",
     "lint": "next lint",
     "graphql": "graphql-codegen --w"
   },
