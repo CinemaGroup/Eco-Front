@@ -1,0 +1,21 @@
+.edit {
+	@apply min-h-screen py-10 bg-gray-base text-white;
+}
+.heading {
+	@apply mb-10;
+}
+.form {
+	@apply flex flex-wrap items-start gap-10;
+}
+.field,
+.upload,
+.editor,
+.palette {
+	width: calc(50% - 20px);
+}
+.button {
+	@apply w-full mt-5 text-center;
+}
+.update {
+	@apply btn-gradient px-12 py-3 rounded-sm font-medium;
+}

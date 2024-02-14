@@ -1,0 +1,25 @@
+query CategoriesCatalog($query: QueryInput!) {
+	categories(query: $query) {
+		id
+		name
+		slug
+		imagePath
+		backgroundColor
+		priceFrom
+		groups {
+			id
+			name
+			imagePath
+			services {
+				id
+				name
+				description
+				term
+				imagePath
+				price
+			}
+		}
+		status
+		createdAt
+	}
+}

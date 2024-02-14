@@ -1,0 +1,5 @@
+mutation ToggleAdvantage($id: Int!) {
+	toggleAdvantage(id: $id) {
+		id
+	}
+}

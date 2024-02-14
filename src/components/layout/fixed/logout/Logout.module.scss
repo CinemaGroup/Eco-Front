@@ -1,0 +1,23 @@
+.logout {
+	@apply bg-red-400 rounded-full flex items-center justify-center scale-hover;
+	width: 60px;
+	height: 60px;
+
+	> svg {
+		@apply text-white;
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.logout {
+		width: 50px;
+		height: 50px;
+
+		> svg {
+			@apply w-6 h-6;
+		}
+	}
+}
+

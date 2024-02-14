@@ -1,0 +1,168 @@
+.header {
+	@apply relative;
+	height: 1000px;
+	border-radius: 0px 0px 200px 200px;
+	margin-bottom: 165px;
+
+	> img {
+		@apply image-like-bg;
+	}
+}
+.inner {
+	@apply w-full h-full flex items-start justify-between px-16;
+	background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 55.5%);
+}
+.left {
+	@apply h-full flex items-start;
+}
+.right {
+	@apply text-white pt-5 flex flex-col items-end gap-2;
+}
+.contact {
+	a {
+		@apply transition-transform;
+
+		&:hover {
+			@apply scale-105;
+		}
+	}
+}
+.social {
+	@apply pt-5 pl-6;
+
+	a {
+		@apply transition-transform;
+
+		&:hover {
+			@apply scale-105;
+		}
+	}
+}
+.call {
+	@apply underline text-md underline-offset-4 transition-transform;
+	
+	&:hover {
+		@apply scale-105;
+	}
+}
+
+@media (max-width: 1700px) {
+	.header {
+		height: 850px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.header {
+		height: 700px;
+		margin-bottom: 115px;
+	}
+	.inner {
+		padding: 0 25px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.header {
+		height: 600px;
+	}
+	.social img {
+		width: 30px;
+		height: 30px;
+	}
+	.contact span {
+		font-size: 17px;
+	}
+	.call {
+		@apply text-md-minus;
+	}
+}
+
+@media (max-width: 900px) {
+	.header {
+		margin-bottom: 80px;
+	}
+	.header {
+		height: 450px;
+	}
+	.social img {
+		width: 25px;
+		height: 25px;
+	}
+	.right,
+	.social {
+		@apply pl-4 pt-4;
+	}
+}
+
+@media (max-width: 750px) {
+	.right {
+		@apply flex flex-col gap-1 items-center justify-center;
+		max-width: 160px;
+	}
+	.contact {
+		@apply flex flex-wrap items-center justify-center;
+	}
+	.contact span {
+		@apply text-md-minus;
+	}
+	.call {
+		@apply text-sm-plus;
+	}
+}
+
+@media (max-width: 700px) {
+	.header {
+		height: 400px;
+	}
+}
+
+@media (max-width: 600px) {
+	.header {
+		margin-bottom: 60px;
+	}
+	.call {
+		@apply text-sm;
+	}
+	.contact span {
+		@apply m-0 text-sm;
+	}
+	.left {
+		@apply flex-col flex-wrap items-center gap-y-3;
+	}
+	.social {
+		@apply p-0;
+		order: 2;
+	}
+	.right {
+		@apply pl-0;
+		max-width: 110px;
+	}
+}
+
+@media (max-width: 500px) {
+	.left {
+		@apply w-full;
+	}
+	.right {
+		display: none;
+	}
+	.social {
+		@apply mr-auto;
+	}
+	.inner {
+		padding: 0 0 0 25px;
+	}
+}
+
+@media (max-width: 400px) {
+	.header {
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 380px) {
+	.inner {
+		padding: 0 0 0 15px;
+	}
+}

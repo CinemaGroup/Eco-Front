@@ -1,0 +1,5 @@
+mutation ToggleOffer($id: Int!) {
+	toggleOffer(id: $id) {
+		id
+	}
+}

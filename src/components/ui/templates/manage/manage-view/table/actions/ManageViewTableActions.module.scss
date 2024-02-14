@@ -1,0 +1,7 @@
+.actions {
+	max-width: 100px;
+	@apply w-full flex justify-center;
+}
+.button {
+	@apply bg-gray-700 flex items-center justify-center w-11 h-9 rounded-sm-plus transition-colors hover:bg-purple-400;
+}

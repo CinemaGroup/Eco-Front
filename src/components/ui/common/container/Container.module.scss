@@ -1,0 +1,42 @@
+.container {
+	@apply w-full;
+
+	&.biggest,
+	&.large,
+	&.medium,
+	&.small {
+		@apply mx-auto;
+		padding: 0 25px;
+	}
+
+	&.biggest {
+		max-width: 1630px;
+	}
+
+	&.large {
+		max-width: 1580px;
+	}
+
+	&.medium {
+		max-width: 1525px;
+	}
+
+	&.small {
+		max-width: 1250px;
+	}
+
+	&.left,
+	&.right {
+		max-width: 1795px;
+	}
+
+	&.right {
+		@apply ml-auto;
+		padding-left: 25px;
+	}
+
+	&.left {
+		@apply mr-auto;
+		padding-right: 25px;
+	}
+}

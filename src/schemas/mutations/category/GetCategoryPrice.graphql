@@ -1,0 +1,3 @@
+mutation GetCategoryPrice($data: GetCategoryPriceInput!) {
+	categoryPrice(data: $data)
+}

@@ -1,0 +1,84 @@
+.prev {
+	@apply bg-red-400 flex items-center gap-3 py-2 px-5 rounded-sm-plus text-white mb-3;
+}
+.groups {
+	@apply flex gap-x-3 gap-y-4 flex-wrap overflow-x-hidden overflow-y-auto pr-5;
+	max-height: 1000px;
+	scrollbar-color: #c22d1b rgba(210, 210, 210, 1);
+	scrollbar-width: thin;
+
+	&::-webkit-scrollbar {
+		@apply rounded-lg;
+		width: 5px;
+	}
+
+	&::-webkit-scrollbar-track {
+		@apply w-full rounded-lg;
+		background: rgba(210, 210, 210, 1);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		@apply w-full bg-red-400 rounded-lg;
+	}
+}
+.group {
+	@apply animate-fade w-full flex flex-col items-center justify-between rounded-md gap-5;
+	max-width: calc(100% / 3 - 8px);
+	background-color: rgba(242, 241, 238, 1);
+	padding: 44px 33px 26px 54px;
+
+	> img {
+		max-width: 200px;
+	}
+}
+.bottom {
+	@apply w-full flex items-center justify-between gap-5;
+}
+.arrow {
+	@apply rounded-full bg-white flex items-center justify-center transition-transform;
+	width: 50px;
+	height: 50px;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	> svg {
+		@apply w-8 h-8;
+	}
+}
+.name {
+	@apply w-full text-2lg font-medium;
+	max-width: 135px;
+}
+
+@media (max-width: 1500px) {
+	.group {
+		max-width: calc(100% / 2 - 6px);
+	}
+	.name {
+		@apply text-lg;
+	}
+}
+
+@media (max-width: 700px) {
+	.group {
+		max-width: 100%;
+	}
+	.name {
+		@apply text-md-plus;
+	}
+	.prev {
+		@apply gap-2 text-md;
+
+		> svg {
+			@apply w-5 h-5;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.group {
+		padding: 35px 25px 25px 30px;
+	}
+}

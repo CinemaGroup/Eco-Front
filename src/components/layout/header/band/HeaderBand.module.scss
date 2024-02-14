@@ -1,0 +1,125 @@
+.band {
+	@apply w-full h-full pt-6 pb-10 px-7 bg-red-400 flex flex-col justify-between items-center;
+	max-width: 380px;
+}
+.heading {
+	@apply text-center text-white text-4lg font-medium mb-7;
+}
+.form {
+	@apply flex flex-col gap-4;
+}
+.send {
+	@apply btn py-2.5;
+}
+.policy {
+	@apply mt-3.5 pl-2 flex items-start gap-3;
+}
+.policyText {
+	@apply text-white text-sm-plus font-medium;
+
+	> a {
+		@apply inline underline;
+	}
+}
+
+@media (max-width: 1700px) {
+	.heading {
+		@apply text-3lg;
+	}
+}
+
+@media (max-width: 1500px) {
+	.heading {
+		@apply text-2lg;
+	}
+	.send {
+		@apply text-base;
+	}
+	.policyText {
+		@apply text-sm;
+	}
+	.logo {
+		> img {
+			width: 180px;
+		}
+	}
+	.band {
+		max-width: 330px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.logo {
+		> img {
+			width: 160px;
+		}
+	}
+	.heading {
+		@apply text-base;
+	}
+	.send {
+		@apply text-md-plus;
+	}
+	.band {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 900px) {
+	.heading {
+		@apply mb-4 text-md;
+	}
+	.band {
+		@apply px-5 pb-6;
+		max-width: 250px;
+	}
+	.send {
+		@apply text-md;
+	}
+	.policyText {
+		@apply text-sm-minus;
+	}
+	.policy {
+		@apply pl-0;
+	}
+	.logo {
+		> img {
+			width: 135px;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.band {
+		max-width: 200px;
+	}
+	.logo {
+		> img {
+			width: 125px;
+		}
+	}
+	.heading {
+		@apply text-sm-plus;
+	}
+	.send {
+		@apply text-sm py-1.5;
+	}
+	.form {
+		@apply gap-2;
+	}
+	.policyText {
+		font-size: 9px;
+	}
+}
+
+@media (max-width: 600px) {
+	.band {
+		order: 3;
+	}
+}
+
+@media (max-width: 500px) {
+	.band {
+		@apply ml-auto;
+	}
+}

@@ -1,0 +1,20 @@
+.auth {
+	@apply min-h-screen flex flex-col items-center justify-center bg-gray-base;
+}
+.title {
+	@apply text-white text-5lg font-semibold capitalize mb-5;
+}
+.form {
+	@apply flex flex-col items-start;
+}
+.field {
+	& + & {
+		@apply mt-3;
+	}
+}
+.submit {
+	@apply text-white bg-gray-600 rounded-sm py-3 px-12 uppercase text-md mt-5 mx-auto;
+}
+.change {
+	@apply text-white underline underline-offset-4 text-sm mt-2;
+}

@@ -1,0 +1,13 @@
+query Offers($query: QueryInput!) {
+	offers(query: $query) {
+		id
+		sale
+		about
+		description
+		imagePath
+		backgroundColor
+		color
+		status
+		createdAt
+	}
+}

@@ -1,0 +1,50 @@
+.fixed {
+	@apply z-5 flex flex-col;
+	gap: 30px;
+	position: fixed;
+	bottom: 67px;
+}
+.right {
+	right: 63px;
+}
+.left {
+	left: 63px;
+}
+
+@media (max-width: 1700px) {
+	.fixed {
+		bottom: 50px;
+	}
+	.right {
+		right: 40px;
+	}
+	.left {
+		left: 40px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.fixed {
+		@apply gap-7;
+		bottom: 40px;
+	}
+	.right {
+		right: 30px;
+	}
+	.left {
+		left: 30px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.fixed {
+		@apply gap-5;
+		bottom: 35px;
+	}
+	.right {
+		right: 15px;
+	}
+	.left {
+		left: 15px;
+	}
+}

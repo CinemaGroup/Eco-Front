@@ -1,0 +1,13 @@
+query ServiceById($id: Int!) {
+	serviceById(id: $id) {
+		name
+		description
+		imagePath
+		price
+		term
+		groups {
+			id
+			name
+		}
+	}
+}

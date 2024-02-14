@@ -1,0 +1,10 @@
+query Groups($query: QueryGroupInput!) {
+	groups(query: $query) {
+		id
+		name
+		slug
+		imagePath
+		status
+		createdAt
+	}
+}

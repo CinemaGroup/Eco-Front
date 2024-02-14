@@ -1,0 +1,12 @@
+query CategoryById($id: Int!) {
+	categoryById(id: $id) {
+		name
+		imagePath
+		backgroundColor
+		priceFrom
+		rubrics {
+			id
+			name
+		}
+	}
+}

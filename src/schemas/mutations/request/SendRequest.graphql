@@ -1,0 +1,7 @@
+mutation sendRequest($data: RequestInput!) {
+	sendRequests(data: $data) {
+		name
+		phone
+		type
+	}
+}

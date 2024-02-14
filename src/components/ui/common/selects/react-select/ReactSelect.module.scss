@@ -1,0 +1,15 @@
+.selectContainer {
+	@apply w-full relative z-1 flex flex-col gap-1 text-md;
+}
+.label {
+	@apply text-md-minus text-white;
+}
+.error {
+	@apply font-light text-sm;
+}
+.errorWhite {
+	@apply text-white;
+}
+.errorRed {
+	@apply text-red-300;
+}

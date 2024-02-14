@@ -1,0 +1,6 @@
+mutation UpdateAdvantage($id: Int!, $data: UpdateAdvantageInput!) {
+	updateAdvantage(id: $id, data: $data) {
+		id
+		status
+	}
+}

@@ -1,0 +1,6 @@
+.list {
+	@apply flex items-center gap-1.5;
+}
+.label {
+	@apply ml-1.5 font-semibold text-md-plus;
+}

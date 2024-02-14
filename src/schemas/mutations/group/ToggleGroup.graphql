@@ -1,0 +1,5 @@
+mutation ToggleGroup($id: Int!) {
+	toggleGroup(id: $id) {
+		id
+	}
+}

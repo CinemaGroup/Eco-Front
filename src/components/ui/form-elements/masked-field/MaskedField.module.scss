@@ -1,0 +1,90 @@
+.field {
+	@apply w-full flex flex-col gap-1;
+}
+.input {
+	@apply bg-white w-full rounded-sm-plus outline-border-none text-md;
+
+	&::placeholder {
+		@apply text-md text-gray-200;
+	}
+
+	&.big {
+		@apply py-6 px-4;
+	}
+
+	&.small {
+		@apply py-3.5 px-3.5;
+	}
+}
+.label {
+	@apply text-md-minus;
+}
+.error {
+	@apply font-light text-sm;
+}
+.errorWhite {
+	@apply text-white;
+}
+.errorRed {
+	@apply text-red-300;
+}
+
+@media (max-width: 1600px) {
+	.input {
+		&.big {
+			@apply py-5 px-4;
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.input {
+		@apply text-md-minus;
+
+		&::placeholder {
+			@apply text-md-minus;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.input {
+		@apply text-sm-plus;
+
+		&::placeholder {
+			@apply text-sm-plus;
+		}
+
+		&.big {
+			@apply py-5 px-4;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.input {
+		@apply text-sm;
+
+		&::placeholder {
+			@apply text-sm;
+		}
+
+		&.big {
+			@apply py-4 px-4;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.input {
+		@apply text-sm-minus;
+
+		&::placeholder {
+			@apply text-sm-minus;
+		}
+
+		&.small {
+			@apply py-3 px-4;
+		}
+	}
+}

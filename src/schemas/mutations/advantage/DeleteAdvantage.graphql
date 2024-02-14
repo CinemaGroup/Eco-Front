@@ -1,0 +1,5 @@
+mutation DeleteAdvantage($id: Int!) {
+	deleteAdvantage(id: $id) {
+		id
+	}
+}

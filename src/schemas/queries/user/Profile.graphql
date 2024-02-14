@@ -1,0 +1,8 @@
+query Profile {
+	profile {
+		login
+		email
+		avatarPath
+		role
+	}
+}

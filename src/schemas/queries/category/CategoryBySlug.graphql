@@ -1,0 +1,5 @@
+query CategoryBySlug($slug: String!) {
+	categoryBySlug(slug: $slug) {
+		priceFrom
+	}
+}

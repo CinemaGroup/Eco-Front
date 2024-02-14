@@ -1,0 +1,19 @@
+.title {
+	@apply font-medium mb-4 text-center uppercase text-2lg;
+}
+.form {
+	@apply flex flex-col gap-3;
+	min-width: 350px;
+}
+.field {
+	> input {
+		@apply border border-solid border-gray-400 rounded-md;
+	}
+}
+.send {
+	@apply py-3 bg-red-400 text-white font-medium rounded-md text-md-plus transition-all;
+
+	&:hover {
+		box-shadow: 0px 4px 10px #C22D1B;
+	}
+}

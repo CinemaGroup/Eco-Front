@@ -1,0 +1,103 @@
+.section {
+	margin-bottom: 110px;
+}
+.top {
+	@apply flex items-center justify-between gap-6;
+	margin-bottom: 50px;
+}
+.item {
+	@apply w-fit border border-solid border-red-400 rounded-lg py-6 px-16 flex flex-col items-start;
+}
+.content {
+	@apply w-full;
+	max-width: 350px;
+}
+.rating {
+	@apply flex gap-1 mb-9;
+}
+.description {
+	@apply mb-8;
+}
+.author {
+	@apply flex items-center gap-5;
+}
+.avatar {
+	@apply rounded-full;
+}
+.name {
+	@apply font-medium text-2lg text-red-400 mb-3;
+}
+.date {
+	@apply text-gray-400 font-medium;
+}
+.container {
+	max-width: 1500px;
+}
+.arrows {
+	@apply flex gap-5;
+
+	> button {
+		@apply scale-hover;
+	}
+}
+
+@media (max-width: 1300px) {
+	.write {
+		@apply text-base py-4 px-12;
+	}
+}
+
+@media (max-width: 1300px) {
+	.section {
+		margin-bottom: 90px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.section {
+		margin-bottom: 80px;
+	}
+	.item {
+		@apply py-6 px-10;
+	}
+	.rating {
+		@apply mb-5;
+	}
+	.description {
+		@apply text-md-plus;
+	}
+	.name {
+		@apply text-base;
+	}
+	.date {
+		@apply text-md-plus;
+	}
+	.author > img {
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@media (max-width: 800px) {
+	.section {
+		margin-bottom: 70px;
+	}
+	.top {
+		@apply flex flex-col items-start gap-3 mb-6;
+	}
+	.write {
+		@apply text-md-plus py-3.5 px-8 mt-6;
+	}
+}
+
+@media (max-width: 600px) {
+	.section {
+		margin-bottom: 60px;
+	}
+}
+
+@media (max-width: 400px) {
+	.section {
+		margin-bottom: 40px;
+	}
+}

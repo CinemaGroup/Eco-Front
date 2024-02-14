@@ -1,0 +1,5 @@
+mutation DeleteOffer($id: Int!) {
+	deleteOffer(id: $id) {
+		id
+	}
+}

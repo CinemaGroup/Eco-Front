@@ -1,0 +1,34 @@
+.list {
+	@apply flex items-center gap-10;
+}
+.item {
+	@apply text-lg font-medium;
+}
+.link {
+	@apply underline-hover;
+
+	&::after {
+		content: '';
+	}
+}
+
+@media (max-width: 1700px) {
+	.item {
+		@apply text-base;
+	}
+}
+
+@media (max-width: 1200px) {
+	.item {
+		@apply text-md-plus;
+	}
+}
+
+@media(max-width: 800px) {
+	.list {
+		@apply flex flex-col items-start gap-5;
+	}
+	.item {
+		@apply text-md;
+	}
+}

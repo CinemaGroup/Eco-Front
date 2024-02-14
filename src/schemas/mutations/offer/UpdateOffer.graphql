@@ -1,0 +1,5 @@
+mutation updateOffer($id: Int!, $data: UpdateOfferInput!) {
+	updateOffer(id: $id, data: $data) {
+		id
+	}
+}

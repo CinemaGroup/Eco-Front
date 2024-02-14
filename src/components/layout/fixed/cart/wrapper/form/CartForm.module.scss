@@ -1,0 +1,61 @@
+.form {
+	@apply flex gap-5 items-end;
+}
+.field {
+	> input {
+		@apply border border-solid border-gray-300/70;
+	}
+}
+.formText {
+	@apply text-md font-medium;
+	margin-bottom: 25px;
+}
+.place {
+	@apply bg-red-400 py-3.5 px-8 text-md-plus text-white whitespace-nowrap rounded-sm-plus transition-all duration-200;
+
+	&:hover {
+		box-shadow: 0px 4px 10px #c22d1b;
+	}
+}
+
+@media (max-width: 1200px) {
+	.place {
+		@apply text-md;
+	}
+}
+
+@media (max-width: 900px) {
+	.place {
+		@apply text-sm-plus;
+	}
+}
+
+@media (max-width: 700px) {
+	.field {
+		max-width: calc(50% - 10px);
+
+		> input {
+			@apply placeholder:text-sm-plus;
+			padding: 14px 15px !important;
+			font-size: 14px !important;
+		}
+	}
+	.place {
+		@apply text-md;
+	}
+	.form {
+		@apply flex-wrap items-start;
+	}
+}
+
+@media (max-width: 400px) {
+	.formText {
+		@apply text-sm-plus;
+	}
+	.form {
+		@apply flex-col items-start;
+	}
+	.field {
+		max-width: 100%;
+	}
+}

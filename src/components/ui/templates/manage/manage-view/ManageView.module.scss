@@ -1,0 +1,12 @@
+.wrapper {
+	@apply py-10 min-h-screen bg-gray-base text-white text-md;
+	padding-left: 380px;
+	padding-right: 80px;
+}
+.sidebar {
+	@apply py-10 w-full fixed left-0 bottom-0 top-0 px-10 bg-gray-800;
+	max-width: 320px;
+}
+.heading {
+	@apply text-3lg font-bold text-center mb-10;
+}

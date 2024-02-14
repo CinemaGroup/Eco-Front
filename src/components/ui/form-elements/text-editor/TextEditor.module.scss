@@ -1,0 +1,23 @@
+.wrapper {
+	@apply w-full border-0 animate-fade flex flex-col gap-1;
+}
+.toolbar {
+	@apply outline-border-none rounded-t-lg mb-0 bg-gray-600 bg-opacity-40 p-3;
+
+	> div {
+		@apply m-0;
+
+		> div {
+			@apply outline-border-none shadow-none transition-colors border-gray-500 bg-gray-500 hover:bg-gray-300 mx-1.5;
+		}
+	}
+}
+.editor {
+	@apply h-96 border rounded-b-lg border-gray-700 text-white overflow-hidden text-md-plus;
+}
+.error {
+	@apply text-red-300 font-light text-sm;
+}
+.label {
+	@apply text-md-minus text-white;
+}

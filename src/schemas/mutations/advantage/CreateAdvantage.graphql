@@ -1,0 +1,5 @@
+mutation CreateAdvantage{
+  createAdvantage{
+    id
+  }
+}

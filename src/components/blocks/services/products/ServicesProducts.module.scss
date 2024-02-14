@@ -1,0 +1,112 @@
+.prev {
+	@apply bg-red-400 flex items-center gap-3 py-2 px-5 rounded-sm-plus text-white mb-3;
+}
+.services {
+	@apply flex gap-x-2.5 gap-y-4 flex-wrap overflow-x-hidden overflow-y-auto pr-5;
+	max-height: 1000px;
+	scrollbar-color: #c22d1b rgba(210, 210, 210, 1);
+	scrollbar-width: thin;
+
+	&::-webkit-scrollbar {
+		@apply rounded-lg;
+		width: 5px;
+	}
+
+	&::-webkit-scrollbar-track {
+		@apply w-full rounded-lg;
+		background: rgba(210, 210, 210, 1);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		@apply w-full bg-red-400 rounded-lg;
+	}
+}
+.service {
+	@apply animate-fade w-full flex flex-col justify-between items-start gap-5 rounded-md;
+	max-width: calc(100% / 3 - 7px);
+	background-color: rgba(242, 241, 238, 1);
+	padding: 36px 7px 27px;
+}
+.top {
+	@apply flex flex-col items-center text-center;
+}
+.name {
+	@apply font-medium mb-5;
+}
+.description {
+	@apply text-md-plus font-medium mb-5;
+}
+.term {
+	@apply text-md-plus font-medium text-gray-500;
+
+	> span {
+		@apply text-base text-gray-base;
+	}
+}
+.bottom {
+	@apply w-full flex items-center gap-5 justify-between;
+	padding: 0 42px 0 29px;
+}
+.price {
+	@apply text-2lg font-medium flex items-center gap-1;
+}
+.buy {
+	@apply flex items-center justify-center bg-red-400 rounded-full transition-transform;
+	width: 35px;
+	height: 35px;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	> svg {
+		@apply text-white;
+		width: 22px;
+		height: 22px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.service {
+		max-width: calc(50% - 5px);
+		padding: 36px 20px 27px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.name {
+		@apply text-md-plus mb-3;
+	}
+	.description {
+		@apply text-md mb-3;
+	}
+	.term {
+		> span {
+			@apply text-md-plus;
+		}
+	}
+	.top > img {
+		@apply w-auto;
+		max-height: 230px;
+	}
+}
+
+@media (max-width: 700px) {
+	.service {
+		max-width: 100%;
+		padding: 30px 20px 27px;
+	}
+	.bottom {
+		@apply p-0;
+	}
+	.price {
+		@apply text-lg;
+	}
+	.prev {
+		@apply gap-2 text-md;
+
+		> svg {
+			@apply w-5 h-5;
+		}
+	}
+}

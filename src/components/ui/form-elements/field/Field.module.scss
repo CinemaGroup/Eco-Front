@@ -1,0 +1,127 @@
+.field {
+	@apply w-full flex flex-col gap-1;
+}
+.input {
+	@apply w-full rounded-sm-plus outline-border-none text-md;
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	&[type='number'] {
+		-moz-appearance: textfield;
+	}
+
+	&::placeholder {
+		@apply text-md text-gray-200;
+	}
+
+	&.big {
+		@apply py-6 px-4;
+	}
+
+	&.small {
+		@apply py-3.5 px-3.5;
+	}
+
+	&.manage {
+		@apply rounded-sm py-2.5 px-4;
+	}
+
+	&.white {
+		@apply bg-white text-gray-base;
+	}
+
+	&.black {
+		@apply text-white;
+		background-color: #242529;
+	}
+}
+.labelSmall {
+	@apply text-md-minus;
+}
+.labelBig {
+	@apply font-medium text-md-plus;
+}
+.labelBlack {
+	@apply text-gray-base;
+}
+.labelWhite {
+	@apply text-white;
+}
+.error {
+	@apply font-light text-sm;
+}
+.errorWhite {
+	@apply text-white;
+}
+.errorRed {
+	@apply text-red-300;
+}
+
+@media (max-width: 1600px) {
+	.input {
+		&.big {
+			@apply py-5 px-4;
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.input {
+		@apply text-md-minus;
+
+		&::placeholder {
+			@apply text-md-minus;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.input {
+		@apply text-sm-plus;
+
+		&::placeholder {
+			@apply text-sm-plus;
+		}
+
+		&.big {
+			@apply py-5 px-4;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.input {
+		@apply text-sm;
+
+		&::placeholder {
+			@apply text-sm;
+		}
+
+		&.big {
+			@apply py-4 px-4;
+		}
+	}
+	.labelBig {
+		@apply text-md-minus;
+	}
+}
+
+@media (max-width: 700px) {
+	.labelBig {
+		@apply text-sm-plus;
+	}
+	.input {
+		@apply text-sm-minus;
+
+		&::placeholder {
+			@apply text-sm-minus;
+		}
+
+		&.small {
+			@apply py-3 px-4;
+		}
+	}
+}

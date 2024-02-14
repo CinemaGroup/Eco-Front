@@ -1,0 +1,6 @@
+query CalculatorCategories($query: QueryInput!) {
+	categories(query: $query) {
+		slug
+		name
+	}
+}

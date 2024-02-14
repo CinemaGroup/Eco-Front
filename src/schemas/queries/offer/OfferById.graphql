@@ -1,0 +1,9 @@
+query OfferById($id: Int!) {
+	offerById(id: $id) {
+		sale
+		description
+		imagePath
+		color
+		backgroundColor
+	}
+}

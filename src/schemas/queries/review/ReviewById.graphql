@@ -1,0 +1,9 @@
+query ReviewById($id: Int!) {
+	reviewById(id: $id) {
+		author
+		authorAvatar
+		rating
+		review
+		date
+	}
+}

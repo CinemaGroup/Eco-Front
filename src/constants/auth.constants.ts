@@ -1,0 +1,5 @@
+export enum EnumCookies {
+	ACCESS_TOKEN = 'ECO_DRY_ACC',
+	REFRESH_TOKEN = 'ECO_DRY_XLSF',
+	SESSION = 'SESSION',
+}

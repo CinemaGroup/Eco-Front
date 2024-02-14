@@ -1,0 +1,7 @@
+query AdvantageById($id: Int!) {
+	advantageById(id: $id) {
+		name
+		description
+		imagePath
+	}
+}

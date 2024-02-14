@@ -1,0 +1,6 @@
+query CalculatorRubrics($query: QueryInput!) {
+	rubrics(query: $query) {
+		slug
+		name
+	}
+}

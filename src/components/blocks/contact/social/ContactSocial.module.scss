@@ -1,0 +1,20 @@
+.list {
+	@apply flex justify-center items-center gap-2;
+}
+.link {
+	@apply scale-hover-small;
+}
+
+@media (max-width: 1300px) {
+	.link > img {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	.link > img {
+		width: 35px;
+		height: 35px;
+	}
+}

@@ -1,0 +1,46 @@
+.list {
+	@apply mb-8 flex items-center justify-between gap-10;
+}
+.link {
+	@apply flex items-center gap-3 font-semibold text-2lg text-gray-600 scale-hover-small;
+}
+
+@media (max-width: 1700px) {
+	.link {
+		@apply text-lg;
+	}
+}
+
+@media (max-width: 1300px) {
+	.link {
+		@apply text-base;
+	}
+}
+
+@media (max-width: 1100px) {
+	.link {
+		@apply text-md-plus;
+
+		> img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.list {
+		@apply flex flex-col gap-4 items-center;
+	}
+}
+
+@media (max-width: 600px) {
+	.link {
+		@apply text-md text-center;
+
+		> img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.top {
+	@apply flex gap-10 items-end justify-between;
+	margin-bottom: 100px;
+}
+.heading {
+	@apply w-full;
+	max-width: 625px;
+}
+.description {
+	@apply w-full text-2lg text-right;
+	max-width: 750px;
+}
+
+@media (max-width: 1500px) {
+	.description {
+		@apply text-lg;
+	}
+}
+
+@media (max-width: 1300px) {
+	.top {
+		margin-bottom: 70px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.description {
+		@apply text-base;
+	}
+}
+
+@media (max-width: 1000px) {
+	.top {
+		@apply flex-col items-start gap-8;
+		margin-bottom: 45px;
+	}
+	.heading {
+		max-width: 100%;
+	}
+	.description {
+		@apply text-left;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.description {
+		@apply text-md-plus;
+	}
+	.top {
+		@apply gap-5;
+		margin-bottom: 35px;
+	}
+}

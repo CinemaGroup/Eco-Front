@@ -1,0 +1,12 @@
+query Services($query: QueryInput!) {
+	services(query: $query) {
+		id
+		name
+		slug
+		description
+		price
+		imagePath
+		status
+		createdAt
+	}
+}

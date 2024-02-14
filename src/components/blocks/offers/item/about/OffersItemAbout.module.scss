@@ -1,0 +1,35 @@
+.title {
+	@apply font-medium text-3lg mb-4;
+}
+.description {
+	@apply pr-5;
+	max-height: 70vh;
+	scrollbar-color: #66676e rgba(255, 255, 255, 0.56);
+	scrollbar-width: thin;
+
+	&::-webkit-scrollbar {
+		@apply w-1 rounded-lg;
+	}
+
+	&::-webkit-scrollbar-track {
+		@apply w-full bg-gray-400 rounded-lg;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		@apply w-full bg-purple-400 rounded-lg;
+	}
+}
+.description{
+	@apply text-md-plus overflow-x-hidden overflow-y-auto;
+	max-width: 1200px;
+}
+
+@media(max-width: 600px) {
+	.title {
+		@apply text-lg mb-3;
+	}
+	.description {
+		@apply text-md;
+		max-width: 1200px;
+	}
+}

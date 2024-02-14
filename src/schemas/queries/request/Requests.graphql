@@ -1,0 +1,9 @@
+query Requests($query: QueryRequestInput!) {
+	requests(query: $query) {
+		id
+		name
+		phone
+		type
+		createdAt
+	}
+}

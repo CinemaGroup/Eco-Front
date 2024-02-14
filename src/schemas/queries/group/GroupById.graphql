@@ -1,0 +1,10 @@
+query GroupById($id: Int!) {
+	groupById(id: $id) {
+		name
+		imagePath
+		categories {
+			id
+			name
+		}
+	}
+}

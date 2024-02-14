@@ -1,0 +1,37 @@
+.table {
+	@apply mt-5 flex flex-col gap-2;
+}
+.items {
+	@apply flex flex-col gap-2;
+}
+.item {
+	@apply flex items-center justify-between bg-gray-700 px-5 py-2 rounded-sm;
+}
+.image {
+	border-radius: 3px;
+
+	> img {
+		@apply w-10 h-10;
+		border-radius: 3px;
+	}
+}
+.value {
+	max-width: 25%;
+	@apply w-full py-3 pr-20;
+}
+.headerItem {
+	@apply flex items-center justify-between bg-purple-400 bg-opacity-50 shadow-lg;
+}
+.headerValue {
+	max-width: 25%;
+	@apply w-full font-semibold py-2.5;
+
+	&:last-child {
+		max-width: 150px;
+		@apply w-full text-center;
+	}
+}
+.notFound {
+	@apply text-center py-3;
+	font-size: 18px;
+}

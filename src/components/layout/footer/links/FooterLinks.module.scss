@@ -1,0 +1,32 @@
+.list {
+	@apply flex items-center;
+	gap: 50px;
+}
+.item {
+	@apply text-md-plus;
+}
+.link {
+	@apply underline-hover;
+
+	&::after {
+		content: '';
+	}
+}
+
+@media (max-width: 1700px) {
+	.item {
+		@apply text-md;
+	}
+}
+
+@media (max-width: 1100px) {
+	.list {
+		@apply flex flex-col items-start gap-5;
+	}
+}
+
+@media (max-width: 800px) {
+	.item {
+		@apply text-md-minus;
+	}
+}

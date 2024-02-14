@@ -1,0 +1,108 @@
+.section {
+	@apply relative mb-20;
+	padding-bottom: 60px;
+}
+.preview {
+	@apply absolute left-0 top-0 bottom-0 w-full;
+	max-width: 690px;
+}
+.calculator {
+	@apply w-full ml-auto;
+	max-width: 840px;
+}
+.fill {
+	@apply bg-pink-300;
+	padding: 58px 0;
+}
+.title {
+	@apply font-medium text-5lg;
+	margin-bottom: 53px;
+}
+.form {
+	@apply flex items-start flex-wrap gap-x-5 gap-y-7;
+}
+div.field {
+	@apply gap-3;
+
+	input {
+		@apply rounded-md;
+	}
+}
+.sendBox {
+	@apply w-full;
+}
+.send {
+	@apply btn-primary transition-all;
+	padding: 17px 104px;
+
+	&:hover {
+		box-shadow: 0px 4px 10px #C22D1B;
+	}
+}
+.select,
+.field {
+	max-width: calc(100% / 3 - 14px);
+}
+
+.popupTitle {
+	@apply text-2lg font-medium text-center mb-3;
+}
+
+.popupPrice {
+	@apply flex items-center gap-1 justify-center;
+}
+
+@media (max-width: 1700px) {
+	.title {
+		@apply text-4lg;
+	}
+	.preview {
+		max-width: 640px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.title {
+		@apply text-2lg mb-10;
+	}
+	.preview {
+		max-width: 560px;
+	}
+	.send {
+		@apply text-base;
+		padding: 15px 65px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.preview {
+		display: none;
+	}
+	.calculator {
+		@apply m-0;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 900px) {
+	.title {
+		@apply text-lg mb-5;
+	}
+	.form {
+		@apply gap-y-4;
+	}
+	.send {
+		@apply text-md;
+		padding: 13px 45px;
+	}
+}
+
+@media (max-width: 600px) {
+	.fill {
+		padding: 32px 0;
+	}
+	.select,
+	.field {
+		max-width: 100%;
+	}
+}

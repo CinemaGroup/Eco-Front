@@ -1,0 +1,16 @@
+.edit {
+	@apply min-h-screen py-10 bg-gray-base text-white;
+}
+.customer {
+	@apply mb-10 text-md-plus flex items-start flex-col gap-2;
+}
+.username,
+.phone,
+.type {
+	> span {
+		@apply font-medium;
+	}
+}
+.heading {
+	@apply text-3lg font-semibold mb-12;
+}

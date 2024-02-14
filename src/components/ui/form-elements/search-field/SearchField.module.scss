@@ -1,0 +1,20 @@
+.field {
+	@apply flex flex-col gap-2;
+}
+.search {
+	@apply bg-gray-700 rounded-sm flex items-center gap-5 px-4;
+}
+.input {
+	@apply bg-transparent outline-border-none py-2 w-full rounded-sm text-md;
+
+	&::placeholder {
+		@apply text-md text-gray-200;
+	}
+
+	> svg {
+		@apply text-sm;
+	}
+}
+.label {
+	@apply text-md-minus text-white;
+}

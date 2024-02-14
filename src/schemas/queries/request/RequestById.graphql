@@ -1,0 +1,10 @@
+query RequestById($id: Int!) {
+	requestById(id: $id) {
+		id
+		name
+		phone
+		name
+		type
+		createdAt
+	}
+}

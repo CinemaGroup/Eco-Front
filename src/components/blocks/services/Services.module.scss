@@ -1,0 +1,93 @@
+.section {
+	margin-bottom: 183px;
+}
+.rubrics {
+	@apply flex flex-col gap-7;
+}
+.rubric {
+	@apply flex gap-10;
+}
+.area {
+	@apply w-full overflow-hidden;
+}
+.banner {
+	@apply flex items-start gap-3;
+
+	> img {
+		@apply h-full w-full;
+		min-width: 360px;
+	}
+}
+.name {
+	@apply font-light text-8lg;
+	writing-mode: sideways-lr;
+}
+
+@media (max-width: 1700px) {
+	.banner {
+		> img {
+			min-width: 320px;
+		}
+	}
+	.name {
+		@apply text-6lg;
+	}
+	.section {
+		margin-bottom: 140px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.section {
+		margin-bottom: 110px;
+	}
+	.rubric {
+		@apply flex-col items-start;
+	}
+	.banner {
+		display: block;
+
+		> img {
+			display: none;
+		}
+	}
+	.name {
+		writing-mode: horizontal-tb;
+	}
+}
+
+@media (max-width: 1200px) {
+	.section {
+		margin-bottom: 90px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.name {
+		@apply text-4lg;
+	}
+	.rubric {
+		@apply gap-7;
+	}
+	.section {
+		margin-bottom: 70px;
+	}
+}
+
+@media (max-width: 700px) {
+	.name {
+		@apply text-3lg;
+	}
+	.rubric {
+		@apply gap-5;
+	}
+	.section {
+		margin-bottom: 60px;
+	}
+}
+
+@media (max-width: 400px) {
+	.section {
+		margin-bottom: 40px;
+	}
+}

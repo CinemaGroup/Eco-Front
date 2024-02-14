@@ -1,0 +1,10 @@
+query Advantages($query: QueryInput!) {
+	advantages(query: $query) {
+		id
+		name
+		description
+		imagePath
+		status
+		createdAt
+	}
+}

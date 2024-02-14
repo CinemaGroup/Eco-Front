@@ -1,0 +1,53 @@
+.heading {
+	@apply font-semibold text-bigger uppercase leading-tight;
+	line-height: 65px;
+}
+
+@media (max-width: 1700px) {
+	.heading {
+		font-size: 50px;
+		line-height: 60px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.heading {
+		font-size: 45px;
+		line-height: 55px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.heading {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.heading {
+		font-size: 37px;
+		line-height: 47px;
+	}
+}
+
+@media (max-width: 750px) {
+	.heading {
+		font-size: 34px;
+		line-height: 44px;
+	}
+}
+
+@media (max-width: 600px) {
+	.heading {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 550px) {
+	.heading {
+		font-size: 27px;
+		line-height: 37px;
+	}
+}

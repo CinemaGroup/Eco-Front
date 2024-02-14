@@ -1,0 +1,6 @@
+query RubricById($id: Int!) {
+	rubricById(id: $id) {
+		name
+		imagePath
+	}
+}
