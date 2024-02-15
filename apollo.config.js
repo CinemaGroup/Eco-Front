@@ -1,7 +1,7 @@
 module.exports = {
 	service: {
 		endpoint: {
-			url: 'http://45.12.236.120/graphql',
+			url: 'http://back.eco-dry.ru/graphql',
 			skipSSLValidation: true,
 		},
 	},
