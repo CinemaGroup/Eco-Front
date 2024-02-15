@@ -1,30 +1,14 @@
-import {
-	AdvantagesDocument,
-	Sort,
-	Status,
-	type AdvantagesQuery,
-	type AdvantagesQueryVariables,
-} from '@/__generated__/output'
-import { apolloClient } from '@/api/apollo.client'
-import { gql } from '@apollo/client'
+import { Sort, Status, useAdvantagesQuery } from '@/__generated__/output'
 
-export const useAdvantages = async () => {
-	const query = gql`
-		${AdvantagesDocument.loc?.source.body}
-	`
-
-	const { data } = await apolloClient().query<
-		AdvantagesQuery,
-		AdvantagesQueryVariables
-	>({
-		query,
-		fetchPolicy: 'no-cache',
+export const useAdvantages = () => {
+	const { data } = useAdvantagesQuery({
 		variables: {
 			query: {
 				sort: Sort.Oldest,
 				status: Status.Published,
 			},
 		},
+		fetchPolicy: 'no-cache',
 	})
 
 	return { data }

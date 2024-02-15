@@ -1,3 +1,5 @@
+'use client'
+
 import Container from '@/components/ui/common/container/Container'
 import FilledImage from '@/components/ui/common/image/FilledImage'
 import Section from '@/components/ui/common/section/Section'
@@ -6,9 +8,9 @@ import type { FC } from 'react'
 import styles from './Advantages.module.scss'
 import AdvantagesItem from './item/AdvantagesItem'
 
-const Advantages: FC = async () => {
-	const { data } = await useAdvantages()
-	if (data.advantages.length === 0) return null
+const Advantages: FC = () => {
+	const { data } = useAdvantages()
+	if (data?.advantages.length === 0) return null
 
 	return (
 		<Section className={styles.section}>
@@ -23,7 +25,7 @@ const Advantages: FC = async () => {
 						</div>
 					</div>
 					<ul className={styles.items}>
-						{data.advantages.map((advantage, index) => (
+						{data?.advantages.map((advantage, index) => (
 							<AdvantagesItem
 								key={advantage.id}
 								advantage={advantage}

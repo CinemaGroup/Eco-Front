@@ -1,3 +1,5 @@
+'use client'
+
 import Container from '@/components/ui/common/container/Container'
 import Heading from '@/components/ui/common/heading/Heading'
 import Section from '@/components/ui/common/section/Section'
@@ -6,12 +8,12 @@ import type { FC } from 'react'
 import styles from './Offers.module.scss'
 import OffersItem from './item/OffersItem'
 
-const Offers: FC = async () => {
-	const { data } = await useOffers()
+const Offers: FC = () => {
+	const { data } = useOffers()
 	if (!data?.offers || data?.offers.length === 0) return null
 
 	return (
-		<Section className={styles.section} id='offers'>
+		<Section className={styles.section} id="offers">
 			<Container>
 				<div className={styles.offers}>
 					<Heading className={styles.heading}>Специальные предложения</Heading>

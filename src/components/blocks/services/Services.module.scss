@@ -19,8 +19,9 @@
 	}
 }
 .name {
-	@apply font-light text-8lg;
-	writing-mode: sideways-lr;
+	@apply h-0 font-light text-8lg w-10;
+	transform: rotate(90deg) translateY(-40px);
+	transform-origin: left;
 }
 
 @media (max-width: 1700px) {
@@ -30,7 +31,8 @@
 		}
 	}
 	.name {
-		@apply text-6lg;
+		@apply text-6lg w-9;
+		transform: rotate(90deg) translateY(-36px);
 	}
 	.section {
 		margin-bottom: 140px;
@@ -52,7 +54,9 @@
 		}
 	}
 	.name {
-		writing-mode: horizontal-tb;
+		@apply w-auto h-auto;
+		transform: none;
+		transform-origin: 0;
 	}
 }
 
