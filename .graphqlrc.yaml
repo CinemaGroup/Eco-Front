@@ -1,5 +1,5 @@
 schema:
-  - ${GRAPHQL_SERVER_URL:"http://back.eco-dry.ru/graphql"}
+  - ${GRAPHQL_SERVER_URL:"https://back.eco-dry.ru/mygraphql"}
 documents:
   - 'src/schemas/**/*.graphql'
 extensions:
