@@ -48,8 +48,9 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"apollo.config.js",
-		".graphqlrc.yaml"
-, "src/components/blocks/request/Request.tsx"	],
+		".graphqlrc.yaml",
+		"src/components/blocks/request/Request.tsx"
+	],
 	"exclude": ["node_modules"],
 	"files": ["graphql.d.ts"]
 }

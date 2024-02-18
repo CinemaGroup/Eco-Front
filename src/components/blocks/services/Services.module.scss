@@ -6,6 +6,25 @@
 }
 .rubric {
 	@apply flex gap-10;
+
+	&:first-child .categoriesGroup {
+		@apply min-w-full grid gap-5;
+		grid-template-columns: 1fr 1fr 1.5fr;
+
+		.category {
+			&:nth-child(4n) {
+				@apply col-span-2;
+			}
+		}
+	}
+
+	&:last-child .categoriesGroup {
+		@apply min-w-full flex items-stretch gap-5;
+
+		.category {
+			width: calc(50% - 10px);
+		}
+	}
 }
 .area {
 	@apply w-full overflow-hidden;
@@ -23,8 +42,49 @@
 	transform: rotate(90deg) translateY(-40px);
 	transform-origin: left;
 }
+.categories {
+	@apply flex items-start gap-5;
+}
+.category {
+	@apply animate-fade rounded-md flex flex-col items-start gap-2 justify-between;
+	padding: 33px 37px 48px 35px;
+}
+.categoryName {
+	@apply text-2lg font-medium;
+}
+.categoryImage {
+	@apply mx-auto h-auto w-auto;
+}
+.bottom {
+	@apply w-full flex items-end justify-between gap-5;
+}
+.priceBox {
+	@apply flex flex-col items-start gap-2.5;
+}
+.priceLabel {
+	@apply font-medium text-gray-500;
+}
+.priceFrom {
+	@apply text-2lg font-medium flex items-center gap-1;
+}
+.arrow {
+	@apply flex items-center justify-center rounded-full bg-white transition-transform;
+	width: 50px;
+	height: 50px;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	> svg {
+		@apply w-8 h-8;
+	}
+}
 
 @media (max-width: 1700px) {
+	.categoryName {
+		@apply text-lg;
+	}
 	.banner {
 		> img {
 			min-width: 320px;
@@ -39,7 +99,13 @@
 	}
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
+	.categoriesGroup {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (max-width: 1420px) {
 	.section {
 		margin-bottom: 110px;
 	}
@@ -75,6 +141,43 @@
 	}
 	.section {
 		margin-bottom: 70px;
+	}
+}
+
+@media (max-width: 950px) {
+	.categoryName {
+		@apply text-base;
+	}
+	.priceLabel {
+		@apply text-md-plus;
+	}
+	.priceFrom {
+		@apply text-lg;
+	}
+}
+
+@media (max-width: 900px) {
+	.categoryImage {
+		max-width: 200px;
+	}
+	.rubric {
+		@apply flex gap-10;
+
+		&:first-child .categoriesGroup {
+			grid-template-columns: 1fr;
+
+			.category:nth-child(4n) {
+				@apply col-span-1;
+			}
+		}
+
+		&:last-child .categoriesGroup {
+			@apply flex-wrap;
+
+			.category {
+				width: 100%;
+			}
+		}
 	}
 }
 

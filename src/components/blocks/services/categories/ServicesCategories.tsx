@@ -4,8 +4,8 @@ import Icon from '@/components/ui/common/icon/Icon'
 import StaticImage from '@/components/ui/common/image/StaticImage'
 import Catalog from '@/components/ui/templates/catalog/Catalog'
 import { useState, type FC } from 'react'
+import styles from '../Services.module.scss'
 import ServicesGroups from '../groups/ServicesGroups'
-import styles from './ServicesCategories.module.scss'
 import type { IServicesCategories } from './interface/services-categories.interface'
 
 const ServicesCategories: FC<IServicesCategories> = ({
@@ -37,9 +37,11 @@ const ServicesCategories: FC<IServicesCategories> = ({
 									className={styles.category}
 									style={{ background: categoryInGroup.backgroundColor }}
 								>
-									<h4 className={styles.name}>{categoryInGroup.name}</h4>
+									<h4 className={styles.categoryName}>
+										{categoryInGroup.name}
+									</h4>
 									<StaticImage
-										className={styles.image}
+										className={styles.categoryImage}
 										src={categoryInGroup.imagePath}
 										width={250}
 										height={220}

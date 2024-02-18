@@ -50,6 +50,7 @@ export const useManageCategoryEdit = (queryId: string) => {
 
 	const onSubmit: SubmitHandler<UpdateCategoryInput> = async (data) => {
 		await updateCategory({
+			fetchPolicy: 'no-cache',
 			variables: {
 				id: categoryId,
 				data,
