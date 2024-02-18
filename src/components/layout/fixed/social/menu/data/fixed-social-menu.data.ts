@@ -4,12 +4,12 @@ export const FIXED_SOCIAL_MENU: IFixedSocialMenu = {
 	items: [
 		{
 			icon: {
-				src: '/images/icons/viber-fixed.png',
+				src: '/images/icons/phone-fixed.png',
 				width: 40,
 				height: 40,
-				alt: 'Viber',
+				alt: 'Phone',
 			},
-			href: '/',
+			href: 'tel: 74953571753',
 		},
 		{
 			icon: {
@@ -18,7 +18,7 @@ export const FIXED_SOCIAL_MENU: IFixedSocialMenu = {
 				height: 40,
 				alt: 'Whatsapp',
 			},
-			href: '/',
+			href: 'https://api.whatsapp.com/send?phone=79253919535',
 		},
 		{
 			icon: {
@@ -27,7 +27,7 @@ export const FIXED_SOCIAL_MENU: IFixedSocialMenu = {
 				height: 40,
 				alt: 'Telegram',
 			},
-			href: '/',
+			href: 'https://t.me/+79253919535',
 		},
 	],
 }

@@ -10,7 +10,7 @@ export const CONTACT: IContactMenu = {
 				alt: 'Whatsapp',
 			},
 			label: '',
-			href: '/',
+			href: 'https://api.whatsapp.com/send?phone=79253919535',
 		},
 		{
 			icon: {
@@ -20,11 +20,11 @@ export const CONTACT: IContactMenu = {
 				alt: 'Telegram',
 			},
 			label: '',
-			href: '/',
+			href: 'https://t.me/+79253919535',
 		},
 		{
-			label: '+7 495 357 13 53',
-			href: 'tel: 74953571353',
+			label: '+7 495 357 17 53',
+			href: 'tel: 74953571753',
 		},
 	],
 }

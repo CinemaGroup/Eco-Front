@@ -16,6 +16,9 @@
 	@apply flex flex-col items-center gap-4 py-5 rounded-full bg-white;
 	animation: slideList 500ms ease-in-out;
 }
+.item:first-child {
+	display: none;
+}
 .link {
 	@apply transition-transform;
 
@@ -67,5 +70,11 @@
 	}
 	.social {
 		@apply gap-5;
+	}
+}
+
+@media (max-width: 500px) {
+	.item:first-child {
+		display: block;
 	}
 }

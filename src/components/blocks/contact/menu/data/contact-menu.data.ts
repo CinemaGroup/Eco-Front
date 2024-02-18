@@ -3,8 +3,8 @@ import type { IContactMenu } from '../interface/contact-menu.interface'
 export const CONTACT_MENU: IContactMenu = {
 	items: [
 		{
-			label: '+7 495 357 13 53',
-			href: 'tel: 74953571353',
+			label: '+7 495 357 17 53',
+			href: 'tel: 74953571753',
 			icon: {
 				src: '/images/icons/phone.png',
 				width: 45,
@@ -13,7 +13,7 @@ export const CONTACT_MENU: IContactMenu = {
 			},
 		},
 		{
-			label: 'г. Москва, ул. Московская д.1, оф. 01',
+			label: 'ул Летниковская д 4 стр 5',
 			href: '/',
 			icon: {
 				src: '/images/icons/map.png',
