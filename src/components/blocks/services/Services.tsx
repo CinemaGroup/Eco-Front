@@ -15,7 +15,7 @@ const Services: FC = () => {
 	if (!data?.rubrics || data.rubrics.length === 0) return null
 
 	return (
-		<Section className={styles.section} id='services'>
+		<Section className={styles.section} id="services">
 			<Container>
 				<ServicesTop />
 				<div className={styles.rubrics}>

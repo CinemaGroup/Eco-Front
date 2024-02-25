@@ -34,7 +34,8 @@
 	@apply w-full overflow-hidden;
 }
 .banner {
-	@apply flex items-start gap-3;
+	@apply relative flex items-start gap-3;
+	padding-right: 56px;
 
 	> img {
 		@apply h-full w-full;
@@ -42,9 +43,17 @@
 	}
 }
 .name {
-	@apply h-0 font-light text-8lg w-10;
-	transform: rotate(90deg) translateY(-40px);
-	transform-origin: left;
+	@apply h-0 font-light text-8lg;
+	transform: rotate(-90deg);
+	transform-origin: right;
+	position: absolute;
+	right: 45px;
+}
+.rubric:first-child .name {
+	width: 240px;
+}
+.rubric:last-child .name {
+	width: 145px;
 }
 .categories {
 	@apply flex items-start gap-5;
@@ -102,8 +111,13 @@
 		}
 	}
 	.name {
-		@apply text-6lg w-9;
-		transform: rotate(90deg) translateY(-36px);
+		@apply text-6lg;
+	}
+	.rubric:first-child .name {
+		width: 220px;
+	}
+	.rubric:last-child .name {
+		width: 130px;
 	}
 	.section {
 		margin-bottom: 140px;
@@ -131,7 +145,7 @@
 		}
 	}
 	.name {
-		@apply w-auto h-auto;
+		@apply static w-auto h-auto;
 		transform: none;
 		transform-origin: 0;
 	}
