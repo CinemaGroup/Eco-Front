@@ -11,7 +11,7 @@ export const useUpload = () => {
 	})
 
 	const deleteFile = (index: number) => {
-		setFiles([...files].splice(index, 1))
+		setFiles((prevFiles) => prevFiles.filter((_, i) => i !== index))
 	}
 
 	return { files, getRootProps, getInputProps, isDragActive, deleteFile }

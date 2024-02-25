@@ -22,10 +22,14 @@
 	}
 }
 .service {
-	@apply animate-fade w-full flex flex-col justify-between items-start gap-5 rounded-md;
+	@apply animate-fade w-full flex flex-col justify-between items-center gap-5 rounded-md;
 	max-width: calc(100% / 3 - 7px);
 	background-color: rgba(242, 241, 238, 1);
 	padding: 36px 7px 27px;
+}
+.image {
+	@apply w-auto;
+	max-height: 260px;
 }
 .top {
 	@apply flex flex-col items-center text-center;
@@ -37,7 +41,7 @@
 	@apply text-md-plus font-medium mb-5;
 }
 .term {
-	@apply text-md-plus font-medium text-gray-500;
+	@apply text-md-plus font-medium text-gray-500 mb-4;
 
 	> span {
 		@apply text-base text-gray-base;

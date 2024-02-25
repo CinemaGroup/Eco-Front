@@ -10,8 +10,8 @@ import { CONTACT_SOCIAL } from './social/data/contact-social.data'
 
 const Contact: FC = () => {
 	return (
-		<Section className={styles.section} id='contacts'>
-			<Container variant="small">
+		<Section className={styles.section} id="contacts">
+			<Container variant="medium">
 				<div className={styles.contact}>
 					<Heading className={styles.heading}>КОНТАКТЫ</Heading>
 					<ContactMenu menu={CONTACT_MENU} />

@@ -9,8 +9,9 @@ const ReactToaster: FC = () => {
 			toastOptions={{
 				duration: 3000,
 				style: {
+					zIndex: 999999,
 					color: '#39393f',
-					fontSize: '16px'
+					fontSize: '16px',
 				},
 				error: {
 					style: {

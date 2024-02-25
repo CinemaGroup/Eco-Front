@@ -11,6 +11,22 @@
 	}
 }
 
+@media (max-width: 1400px) {
+	.list {
+		@apply flex-wrap justify-center;
+	}
+	.item {
+		width: calc(100% / 3 - 27px);
+
+		&:last-child {
+			width: 100%;
+		}
+	}
+	.link {
+		@apply text-center mx-auto;
+	}
+}
+
 @media (max-width: 1300px) {
 	.link {
 		@apply text-base;
@@ -31,6 +47,9 @@
 @media (max-width: 900px) {
 	.list {
 		@apply flex flex-col gap-4 items-center;
+	}
+	.item {
+		width: 100%;
 	}
 }
 

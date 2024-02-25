@@ -17,7 +17,7 @@ const StorageUpload: FC<IStorageActionsItem> = ({ setIsShow, folderPath }) => {
 	const { files, getInputProps, getRootProps, isDragActive, deleteFile } =
 		useUpload()
 	const { uploadFiles } = useStorageActions('file')
-
+	
 	return (
 		<div className={styles.upload}>
 			<div className={styles.fill}>

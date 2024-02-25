@@ -26,5 +26,9 @@ export const CONTACT: IContactMenu = {
 			label: '+7 495 357 17 53',
 			href: 'tel: 74953571753',
 		},
+		{
+			label: '+7 925 391 95 35',
+			href: 'tel: 79253919535',
+		},
 	],
 }

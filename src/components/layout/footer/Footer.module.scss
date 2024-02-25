@@ -14,7 +14,7 @@
 	@apply flex flex-col items-start gap-11;
 }
 .right {
-	@apply flex flex-col gap-7;
+	@apply flex flex-col items-end gap-7;
 }
 .menu {
 	@apply flex items-end;
@@ -48,6 +48,16 @@
 @media (max-width: 1100px) {
 	.menu {
 		@apply gap-8 flex-col items-start;
+	}
+}
+
+@media (max-width: 1000px) {
+	.right {
+		@apply gap-3;
+	}
+	.contact {
+		@apply flex-wrap justify-center;
+		max-width: 160px;
 	}
 }
 

@@ -13,13 +13,13 @@ export const CONTACT_MENU: IContactMenu = {
 			},
 		},
 		{
-			label: 'ул Летниковская д 4 стр 5',
-			href: '/',
+			label: '+7 925 391 95 35',
+			href: 'tel: 79253919535',
 			icon: {
-				src: '/images/icons/map.png',
+				src: '/images/icons/phone.png',
 				width: 45,
 				height: 45,
-				alt: 'Map',
+				alt: 'Phone',
 			},
 		},
 		{
@@ -30,6 +30,16 @@ export const CONTACT_MENU: IContactMenu = {
 				width: 45,
 				height: 45,
 				alt: 'E-mail',
+			},
+		},
+		{
+			label: 'г. Москва, ул. Летниковская, д. 4 стр. 5',
+			href: '/',
+			icon: {
+				src: '/images/icons/map.png',
+				width: 45,
+				height: 45,
+				alt: 'Map',
 			},
 		},
 	],

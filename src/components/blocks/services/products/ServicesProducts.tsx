@@ -46,6 +46,7 @@ const ServicesProducts: FC<IServicesProducts> = ({
 								Срок: <span>{service.term}</span>
 							</p>
 							<StaticImage
+								className={styles.image}
 								src={service.imagePath}
 								width={250}
 								height={300}
