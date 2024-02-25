@@ -31,22 +31,39 @@ const ServicesCategories: FC<IServicesCategories> = ({
 					const categoriesInGroup = categories.slice(index, index + 5)
 					return (
 						<div key={groupIndex} className={styles.categoriesGroup}>
-							{categoriesInGroup.map((categoryInGroup) => (
+							{categoriesInGroup.map((categoryInGroup, categoryIndex) => (
 								<div
 									key={categoryInGroup.id}
 									className={styles.category}
 									style={{ background: categoryInGroup.backgroundColor }}
 								>
-									<h4 className={styles.categoryName}>
-										{categoryInGroup.name}
-									</h4>
-									<StaticImage
-										className={styles.categoryImage}
-										src={categoryInGroup.imagePath}
-										width={250}
-										height={220}
-										alt={categoryInGroup.name}
-									/>
+									{categoryIndex % 3 === 0 && categoryIndex !== 0 ? (
+										<div className={styles.categoryContent}>
+											<h4 className={styles.categoryName}>
+												{categoryInGroup.name}
+											</h4>
+											<StaticImage
+												className={styles.categoryImage}
+												src={categoryInGroup.imagePath}
+												width={250}
+												height={220}
+												alt={categoryInGroup.name}
+											/>
+										</div>
+									) : (
+										<>
+											<h4 className={styles.categoryName}>
+												{categoryInGroup.name}
+											</h4>
+											<StaticImage
+												className={styles.categoryImage}
+												src={categoryInGroup.imagePath}
+												width={250}
+												height={220}
+												alt={categoryInGroup.name}
+											/>
+										</>
+									)}
 									<div className={styles.bottom}>
 										<div className={styles.priceBox}>
 											<p className={styles.priceLabel}>стоимость от</p>

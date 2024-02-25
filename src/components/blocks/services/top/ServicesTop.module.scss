@@ -2,6 +2,10 @@
 	@apply flex gap-10 items-end justify-between;
 	margin-bottom: 100px;
 }
+.group {
+	@apply text-4lg;
+	margin-bottom: 60px;
+}
 .heading {
 	@apply w-full;
 	max-width: 625px;
@@ -15,6 +19,10 @@
 	.description {
 		@apply text-lg;
 	}
+	.group {
+		@apply text-3lg;
+		margin-bottom: 50px;
+	}
 }
 
 @media (max-width: 1300px) {
@@ -27,9 +35,17 @@
 	.description {
 		@apply text-base;
 	}
+	.group {
+		font-size: 27px;
+		margin-bottom: 50px;
+	}
 }
 
 @media (max-width: 1000px) {
+	.group {
+		@apply text-2lg;
+		margin-bottom: 30px;
+	}
 	.top {
 		@apply flex-col items-start gap-8;
 		margin-bottom: 45px;
@@ -44,6 +60,10 @@
 }
 
 @media (max-width: 600px) {
+	.group {
+		@apply text-lg;
+		margin-bottom: 25px;
+	}
 	.description {
 		@apply text-md-plus;
 	}
